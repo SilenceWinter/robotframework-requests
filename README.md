@@ -73,5 +73,3 @@ python -m robot.libdoc src/RequestsLibrary doc/RequestsLibrary.html
 # Help
 
 Send your questions to the [Robot Framework Users Group](https://groups.google.com/forum/#!forum/robotframework-users)
-
-[Follow me on twitter - @bulkanevcimen](https://twitter.com/bulkanevcimen)
