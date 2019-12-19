@@ -664,8 +664,6 @@ class RequestsKeywords(object):
         ``timeout`` connection timeout
         """
         session = self._cache.switch(alias)
-        if not files:
-            data = self._format_data_according_to_header(session, data, headers)
         redir = True if allow_redirects is None else allow_redirects
 
         response = self._common_request(
@@ -999,7 +997,7 @@ class RequestsKeywords(object):
         return data
 
     def _format_data_to_log_string_according_to_headers(self, session, data, headers):
-        data_str = None
+        data_str = str(data)
         # Merged headers are already case insensitive
         headers = self._merge_headers(session, headers)
 
